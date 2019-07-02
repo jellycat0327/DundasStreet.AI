@@ -5,8 +5,7 @@ Inspired by the City of London's cycling master plan and the cycling routes sele
 
 ## Datasets
 Our source data was obtained from Live London webcams [here](http://www.londonwebcams.ca/) that provide real-time snapshots updated every 30 seconds, and contain images from the east and west on the block between Wellington and Clarence Streets. 
-The default image size is 360 x 245. After crawling the images from the website, we applied an online tool called VGG Image Annotator[here] {http://goo.gl/Kb39RK} to quickly annotate the key objects with boxes and categories for 
-the actual downloaded images. Then, we made the CSV datasets.
+The default image size is 360 x 245. After crawling the images from the website, we applied an online tool called VGG Image Annotator[here] {http://www.robots.ox.ac.uk/~vgg/software/via/via.html} to quickly annotate the key objects with boxes and categories for the actual downloaded images. Then, we made the CSV datasets according to the following method. Folder[CSV]{https://github.com/jellycat0327/DundasStreet.AI/tree/master/CSV} shows an example of CSV datasets.
 
 ### CSV datasets
 The `CSVGenerator` provides an easy way to define your own datasets.
