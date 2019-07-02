@@ -3,7 +3,7 @@ For the detection of bicycles, vehicles, pedestrians on Dundas street
 
 Inspired by the City of London's cycling master plan and the cycling routes selection problem, we are aiming to build a deep learning based object detection system to analyze traffic volume on Dundas Street in London. 
 
-**Datasets**
+## Datasets
 Our source data was obtained from Live London webcams [here](http://www.londonwebcams.ca/) that provide real-time snapshots updated every 30 seconds, and contain images from the east and west on the block between Wellington and Clarence Streets. 
 The default image size is 360 x 245. After crawling the images from the website, we applied an online tool called VGG Image Annotator[here] {http://goo.gl/Kb39RK} to quickly annotate the key objects with boxes and categories for 
 the actual downloaded images. Then, we made the CSV datasets.
@@ -58,17 +58,17 @@ cow,0
 cat,1
 bird,2
 ```
-**Code**
+# Code
 This repository contains all the necessary resources to train our neural networks on the  datasets provided. For the keras-retinanet, you can
 see more details on [RetinaNet](https://github.com/fizyr/keras-retinanet).
 
-# Training
+## Training
 python keras_retinanet/bin/train.py csv /path/to/CSV/annotations.csv /path/to/CSV/classes.csv
 
-# Evaluating
+## Evaluating
 python keras_retinanet/bin/evaluate.py csv {data-set path} {model_path}
 
-# Testing
+## Testing
 An example of testing the network can be seen in [this Notebook](https://github.com/jellycat0327/DundasStreet.AI/blob/master/examples/ResNet50RetinaNet.ipynb).
 In general, inference of the network works as follows:
 
